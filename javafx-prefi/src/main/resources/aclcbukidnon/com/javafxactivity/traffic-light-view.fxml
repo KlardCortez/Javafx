@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox alignment="CENTER" spacing="20.0"
+      xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="aclcbukidnon.com.javafxactivity.controllers.TrafficLightController">
+
+   <children>
+      <HBox alignment="CENTER" spacing="30.0">
+         <children>
+            <Circle fx:id="btnStop" fill="#575757" radius="80.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="btnGo" fill="#575757" radius="80.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="btnHold" fill="#575757" radius="80.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+
+      <Button text="Turn On" onAction="#onStartClick" />
+      <Button text="Turn Off" onAction="#onStopClick" />
+   </children>
+</VBox>
